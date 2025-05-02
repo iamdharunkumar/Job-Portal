@@ -1,3 +1,9 @@
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -6,15 +12,9 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { Link } from "react-router-dom";
 import companies from "../data/companies.json";
 import faqs from "../data/faq.json";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -37,12 +37,12 @@ const LandingPage = () => {
       </section>
       <div className="flex gap-6 justify-center">
         <Link to={"/jobs"}>
-          <Button variant="blue" size="xl">
+          <Button variant="blue" className="rounded-lg" size="xl">
             Find Jobs
           </Button>
         </Link>
         <Link to={"/post-job"}>
-          <Button variant="destructive" size="xl">
+          <Button variant="destructive" className="rounded-lg" size="xl">
             Post a Job
           </Button>
         </Link>
@@ -68,7 +68,7 @@ const LandingPage = () => {
         </CarouselContent>
       </Carousel>
 
-      <img src="/banner.jpeg" className="w-full" />
+      <img src="/banner1.jpg" className="w-full" />
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card>
